@@ -1,10 +1,10 @@
-require `recipe_repository`
+require 'recipe_repository'
 
 describe RecipeRepository do 
 
   def reset_recipe_table
-    seed_sql = File.read('spec./seeds_recipes.sql')
-    connection = PG.connect({ host : 127.0.0.1, dbname: 'recipes_directory_test' })
+    seed_sql = File.read('spec/seeds_recipes.sql')
+    connection = PG.connect({ host: '127.0.0.1', dbname: 'recipes_directory_test' })
     connection.exec(seed_sql)
   end 
 
