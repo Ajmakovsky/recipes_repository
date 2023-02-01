@@ -62,7 +62,7 @@ CREATE TABLE recipes (
 );
 
 5. Create the table.
-psql -h 127.0.0.1 database_name < movies_table.sql
+psql -h 127.0.0.1 database_name < recipes_table.sql
 
 
 # example to insert multiple values
